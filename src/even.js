@@ -1,7 +1,7 @@
 import randNumber from '../random.js';
 import gameStart from '../gameStart.js';
 
-const isEven = question => question % 2 === 0;
+const isEven = (question) => question % 2 === 0;
 const description = 'Answer "yes" if number is even, otherwise answer "no".';
 const gameEven = () => {
   const randomNumber = randNumber(1, 99);
