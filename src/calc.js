@@ -8,7 +8,7 @@ const gameCalc = () => {
   let correctAnswer;
   const randomNumber = randNumber(1, 30);
   const randomNumber2 = randNumber(1, 30);
-  const randomOperator = randNumber (0, 2);
+  const randomOperator = randNumber(0, 2);
   switch (randomOperator) {
     case 0: correctAnswer = randomNumber + randomNumber2;
       break;
