@@ -4,11 +4,11 @@ import gameStart from '../gameStart.js';
 const isEven = (question) => question % 2 === 0;
 const description = 'Answer "yes" if number is even, otherwise answer "no".';
 const gameEven = () => {
-  const randomNumber = randNumber(1, 99);
-  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
+  const ranNumber = randNumber(1, 99);
+  const rightAnswer = isEven(ranNumber) ? 'yes' : 'no';
   const result = {
-    answer: correctAnswer,
-    question: `${randomNumber}`,
+    answer: rightAnswer,
+    question: `${ranNumber}`,
   };
 
   return result;
