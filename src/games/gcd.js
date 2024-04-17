@@ -1,5 +1,5 @@
-import randNumber from '../random.js';
-import gameStart from '../gameStart.js';
+import randNumber from '../utils/random.js';
+import gameStart from '../../gameStart.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const locateGCD = (num1, num2) => {

@@ -1,5 +1,5 @@
-import randNumber from '../random.js';
-import gameStart from '../gameStart.js';
+import randNumber from '../utils/random.js';
+import gameStart from '../../gameStart.js';
 
 const isEven = (question) => question % 2 === 0;
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
