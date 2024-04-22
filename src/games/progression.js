@@ -1,5 +1,6 @@
 import randNumber from '../utils/random.js';
 import gameStart from '../../gameStart.js';
+import createProgression from '../utils/createprogression.js';
 
 const description = 'What number is missing in the progression?';
 const progressLength = 10;
@@ -10,20 +11,10 @@ const gameProgress = () => {
   const hideRightAnswer = randNumber(0, progressLength - 1);
   const correctAnswer = start + hideRightAnswer * step;
 
-  let progression = '';
-
-  for (let count = 0; count < progressLength; count += 1) {
-    const checkPoint = start + step * count;
-    if (count === hideRightAnswer) {
-      progression += '.. ';
-    } else {
-      progression += `${checkPoint} `;
-    }
-  }
-
+  const progress = createProgression(start, step, hideRightAnswer)
   const result = {
     answer: String(correctAnswer),
-    question: `${progression}`,
+    question: `${progress}`,
   };
   return result;
 };

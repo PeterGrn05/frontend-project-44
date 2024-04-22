@@ -1,10 +1,10 @@
 const calcExpresion = (operator, num1, num2) => {
   switch (operator) {
-    case 0:
+    case '+':
       return num1 + num2;
-    case 1:
+    case '-':
       return num1 - num2;
-    case 2:
+    case '*':
       return num1 * num2;
     default:
       return 'Перебор!';
