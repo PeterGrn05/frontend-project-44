@@ -11,7 +11,7 @@ const gameProgress = () => {
   const hideRightAnswer = randNumber(0, progressLength - 1);
   const correctAnswer = start + hideRightAnswer * step;
 
-  const progress = createProgression(start, step, hideRightAnswer)
+  const progress = createProgression(start, step, hideRightAnswer);
   const result = {
     answer: String(correctAnswer),
     question: `${progress}`,
